@@ -19,7 +19,7 @@ def segment_image(image):
     
     """
     이미지 이진화
-    - 임계값을 설정해 임계값보다 크면 흰색, 작으면 검정색
+    - 임계값을 설정해 임계값보다 크면 흰색, 아니면 검정색
     """
     _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
     # cv2.imshow('thresh', thresh)
