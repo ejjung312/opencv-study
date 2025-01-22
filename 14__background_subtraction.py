@@ -103,7 +103,7 @@ class BackgroundSubtractionApp:
             if cv2.waitKey(25) & 0xFF == ord('q'):
                 break
         
-        cap.relase()
+        cap.release()
         if out:
             out.relase()
         cv2.destroyAllWindows()
